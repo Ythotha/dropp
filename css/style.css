@@ -24,6 +24,7 @@ p{
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: inherit;
+
     margin-top: 30px;
     margin-bottom: 0;
 }
@@ -74,9 +75,10 @@ p{
 }
 
 .header__list-item{
-    color: #565656;
     display: inline-block;
     vertical-align: top;
+
+    color: #565656;
 }
 
 .header__list-item:hover{
@@ -87,6 +89,7 @@ p{
 .title{
     margin-top: 0;
     margin-bottom: 0;
+
     font-family: "Oswald", sans-serif ;
     font-weight: 700;
     text-transform: uppercase;
@@ -104,6 +107,8 @@ p{
 }
 
 .link{
+    display: inline-block;
+
     color: inherit;
     text-decoration: none;
 }
@@ -145,23 +150,29 @@ p{
     text-align: center;
 }
 
-.promo__text{
-    display: block;
+.promo__slogan{
+    display: inline-block;
     margin-bottom: 20px;
 
     font-size: 120px;
     text-transform: uppercase;
+
+    text-shadow: #8c8c8c 1px 1px 1px;
 }
 
 .promo__link{
-    display: inline-block;
-
     padding: 6px 60px;
+}
+
+.button{
     border-radius: 5px;
     background-color: #fd5433;
 
     font-size: 32px;
     text-transform: uppercase;
+    font-weight: 700;
+
+    box-shadow: 0 1px #666666, inset 0 4px 4px -4px #fe7e5e;
 }
 
 /*SERVICES*/
@@ -170,6 +181,9 @@ p{
     position: relative;
     border-bottom: #828282 solid 1px;
     text-align: center;
+
+    padding-top: 26px;
+    padding-bottom: 26px;
 }
 
 .section__title{
@@ -177,10 +191,6 @@ p{
     color: #fd5433;
 
     box-sizing: border-box;
-    /*padding-left: 20px;
-    padding-right: 20px;*/
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .services__content{
@@ -229,7 +239,7 @@ p{
 
 .portfolio__item{
     float: left;
-    width: 16.667%;
+    width: 16.6667%;
 }
 
 .about__content{
