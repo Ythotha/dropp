@@ -3,18 +3,16 @@
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
-    src: local('Oswald Regular'), local('Oswald-Regular'),
-    url('../fonts/oswald-v16-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/oswald-v16-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('../fonts/oswald-v16-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/oswald-v16-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* oswald-700 - cyrillic_latin */
 @font-face{
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
-    src: local('Oswald Bold'), local('Oswald-Bold'),
-    url('../fonts/oswald-v16-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/oswald-v16-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('../fonts/oswald-v16-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/oswald-v16-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 body{
@@ -36,7 +34,6 @@ p{
 }
 
 .header{
-    min-height: 110px;
     background-color: #ffffff;
 }
 
@@ -48,7 +45,18 @@ p{
 
 .header__logo{
     float: left;
-    margin-top: 22px;
+
+    font-size: 70px;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+}
+
+.text_grey{
+    color: #474444;
+}
+
+.text_orange{
+    color: #fd5433;
 }
 
 .header__nav{
@@ -69,8 +77,6 @@ p{
     color: #565656;
     display: inline-block;
     vertical-align: top;
-    padding-top: 45px;
-    padding-bottom: 45px;
 }
 
 .header__list-item:hover{
@@ -95,10 +101,6 @@ p{
 
 .header__title{
     font-size: 17px;
-    /*position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
 }
 
 .link{
@@ -107,14 +109,16 @@ p{
 }
 
 .header__link{
-    padding: 45px 19px;
-    /*padding-top: 45px;
-    padding-bottom: 45px;*/
+    display: inline-block;
+    padding: 45px 20px;
+
+    font-family: "Oswald", sans-serif ;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .promo{
     position: relative;
-    min-height: 800px;
     background-color: #b9b9b9;
     background-image: url("../img/banner.png");
     background-repeat: no-repeat;
@@ -132,7 +136,8 @@ p{
 
 .promo__box{
     position: relative;
-    padding-top: 190px;
+    padding-top: 230px;
+    padding-bottom: 310px;
     margin-left: auto;
     margin-right: auto;
 
@@ -151,7 +156,7 @@ p{
 .promo__link{
     display: inline-block;
 
-    padding: 6px 55px;
+    padding: 6px 60px;
     border-radius: 5px;
     background-color: #fd5433;
 
@@ -160,10 +165,6 @@ p{
 }
 
 /*SERVICES*/
-
-.services{
-    min-height: 688px;
-}
 
 .section__header{
     position: relative;
@@ -183,8 +184,8 @@ p{
 }
 
 .services__content{
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 .service{
@@ -228,7 +229,7 @@ p{
 
 .portfolio__item{
     float: left;
-    width: 16%;
+    width: 16.667%;
 }
 
 .about__content{
