@@ -81,10 +81,10 @@ p{
     color: #565656;
 }
 
-.header__list-item:hover{
+/*.header__list-item:hover{
     background-color: #fd5433;
     color: #ffffff;
-}
+}*/
 
 .title{
     margin-top: 0;
@@ -120,15 +120,28 @@ p{
     font-family: "Oswald", sans-serif ;
     font-weight: 700;
     text-transform: uppercase;
+
+    transition: background-color .3s linear;
+    -webkit-transition: background-color .3s linear;
+}
+
+.header__link:hover{
+    background-color: #fd5433;
+    color: #ffffff;
+
+    /*transition: background-color .5s linear, color .5s linear;*/
 }
 
 .promo{
     position: relative;
+
     background-color: #b9b9b9;
     background-image: url("../img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+
     color: #ffffff;
+
 }
 
 .promo:before{
@@ -143,8 +156,6 @@ p{
     position: relative;
     padding-top: 230px;
     padding-bottom: 310px;
-    margin-left: auto;
-    margin-right: auto;
 
     font-family: "Oswald", sans-serif;
     text-align: center;
@@ -169,10 +180,13 @@ p{
     background-color: #fd5433;
 
     font-size: 32px;
+    color: white;
     text-transform: uppercase;
     font-weight: 700;
 
     box-shadow: 0 1px #666666, inset 0 4px 4px -4px #fe7e5e;
+
+    cursor: pointer;
 }
 
 /*SERVICES*/
@@ -254,28 +268,25 @@ p{
 
 /*ABOUT US*/
 
-.about__content{
-    width: inherit;
-}
-
-.about__tab{
+.about__member{
     display: inline-block;
     vertical-align: top;
 
     box-sizing: border-box;
     width: 24%;
-    padding: 4%;
+    padding: 70px 3%;
 }
 
-.about__tab_active{
+.about__member_active{
     position: relative;
 }
 
-.about__tab_active:after{
+.about__member_active:after{
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     left: 50%;
     transform: translate(-50%, 100%);
+
     content: "";
     width: 0;
     height: 0;
@@ -284,34 +295,37 @@ p{
     border-top: 36px solid white;
 }
 
-.about__tab:first-child{
-    padding-left: 2%;
+.about__member-img{
+    width: 100%;
 }
 
-.about__tab:last-child{
-    padding-right: 2%;
-}
-
-.about__description{
+.about__information{
     background-color: #fd5433;
+
+    padding-top: 80px;
+    padding-bottom: 60px;
+    /*padding-top: 70px;
+    padding-bottom: 45px;*/
 }
 
 .about__columns{
-    padding-top: 70px;
-    padding-bottom: 45px;
-
     color: white;
 }
 
 .about__column{
     display: inline-block;
     vertical-align: top;
+
     width: 45%;
-    margin-right: 20px;
+    margin-right: 6%;
 }
 
 .about__column:last-child{
     margin-right: 0;
+}
+
+.about__title{
+    text-transform: none;
 }
 
 .about__socials{
@@ -328,36 +342,43 @@ p{
     margin-right: 0;
 }
 
-.skills__title{
+.secondary-information__title{
     margin-bottom: 30px;
 }
 
-.skills__row{
+.secondary-information__row{
     margin-bottom: 10px;
 }
 
-.skills__name{
+.progress{
+    color: white;
+    background-color: white;
+    height: 10px;
+
+    width:50%;
+    margin-left: 10%;
+    margin-right: 1%;
+    margin-bottom: 5px;
+}
+
+.progress::-webkit-progress-bar{
+    background-color: #fd5433;
+}
+
+.progress::-webkit-progress-value{
+    background-color: white;
+}
+
+.secondary-information__row:last-child{
+    margin-bottom: 0;
+}
+
+.secondary-information__name{
     display: inline-block;
     vertical-align: top;
     min-width: 21%;
 
     text-transform: uppercase;
-}
-
-.skills__progress-bar{
-    display: inline-block;
-    vertical-align: top;
-
-    width:50%;
-    padding-top: 3px;
-    margin-left: 10%;
-    margin-right: 1%;
-}
-
-.skills__progress{
-    width: 100%;
-    height: 10px;
-    background-color: white;
 }
 
 /*LATEST POSTS*/
@@ -401,6 +422,15 @@ p{
     width: 49%;
 }
 
+.post__header{
+    padding-bottom: 10px;
+
+    background-image: url("../img/separating-dash.png");
+    background-size: 80px 4px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
 .post__title{
     font-size: 25px;
 }
@@ -410,4 +440,100 @@ p{
     color: #686868;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+/*CONTACT FORM*/
+
+.contact-us__wrapper{
+    background-image: url("../img/BG City IMG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contact-us__header{
+    border-top: #828282 solid 1px;
+    border-bottom: none;
+}
+
+.contact-us__content{
+    padding-top: 30px;
+    padding-bottom: 85px;
+}
+
+.contact-form__row{
+    margin-bottom: 20px;
+}
+
+.contact-form__row:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.contact-form__label{
+    display: none;
+}
+
+.form-field{
+    font-size: 20px;
+
+    box-sizing: border-box;
+    min-height: 58px;
+
+    padding-left: 20px;
+}
+
+.form-field::placeholder{
+    color: #fd5433;
+}
+
+.contact-form__name{
+    width: 49%;
+}
+
+.contact-form__email{
+    float: right;
+    width: 49%;
+}
+
+.contact-form__message{
+    width: 100%;
+    height: 228px;
+    resize: none;
+
+    padding-top: 15px;
+
+    font-family: inherit;
+}
+
+.contact-form__button{
+    display: block;
+
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: none;
+
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+}
+
+/*FOOTER*/
+
+.footer{
+    border-top: 1px solid #ffffff;
+
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.footer__text{
+    display: inline-block;
+    width: 100%;
+
+    color: #ffffff;
+    text-align: center;
 }

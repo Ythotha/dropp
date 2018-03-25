@@ -109,23 +109,23 @@
         </div>
         <div class="section__content about__content">
             <div class="main-container">
-                <div class="about__tab">
-                    <img src="img/about1.png">
+                <div class="about__member">
+                    <img class="about__member-img" src="img/about1.png">
                 </div>
-                <div class="about__tab about__tab_active">
-                    <img src="img/about2.png">
+                <div class="about__member about__member_active">
+                    <img class="about__member-img" src="img/about2.png">
                 </div>
-                <div class="about__tab">
-                    <img src="img/about3.png">
+                <div class="about__member">
+                    <img class="about__member-img" src="img/about3.png">
                 </div>
-                <div class="about__tab">
-                    <img src="img/about4.png">
+                <div class="about__member">
+                    <img class="about__member-img" src="img/about4.png">
                 </div>
             </div>
-            <div class="about__description">
+            <div class="about__information">
                 <div class="main-container about__columns">
-                    <div class="about__column biography">
-                        <h3 class="title">John Smith - Lead Graphic Artist</h3>
+                    <div class="main-information about__column">
+                        <h3 class="title about__title">John Smith - Lead Graphic Artist</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -141,42 +141,32 @@
                             <img class="about__social" src="img/youtube.svg">
                         </div>
                     </div>
-                    <div class="skills about__column">
-                        <h3 class="title skills__title">Skills</h3>
-                        <div class="skills__row">
-                            <span class="skills__name">photoshop</span>
-                            <div class="skills__progress-bar">
-                                <div class="skills__progress"></div>
-                            </div>
-                            <span class="skills__value">100%</span>
+                    <div class="secondary-information about__column">
+                        <h3 class="title about__title secondary-information__title">Skills</h3>
+                        <div class="secondary-information__row">
+                            <span class="secondary-information__name">photoshop</span>
+                            <progress class="progress" value="100" max="100">photoshop</progress>
+                            <span class="secondary-information__value">100%</span>
                         </div>
-                        <div class="skills__row">
-                            <span class="skills__name">illustrator</span>
-                            <div class="skills__progress-bar">
-                                <div class="skills__progress"></div>
-                            </div>
-                            <span class="skills__value" style="width: 98%">98%</span>
+                        <div class="secondary-information__row">
+                            <span class="secondary-information__name">illustrator</span>
+                            <progress class="progress" value="98" max="100">illustrator</progress>
+                            <span class="secondary-information__value">98%</span>
                         </div>
-                        <div class="skills__row">
-                            <span class="skills__name">wordpress</span>
-                            <div class="skills__progress-bar">
-                                <div class="skills__progress"></div>
-                            </div>
-                            <span class="skills__value" style="width: 67%">67%</span>
+                        <div class="secondary-information__row">
+                            <span class="secondary-information__name">wordpress</span>
+                            <progress class="progress" value="67" max="100">wordpress</progress>
+                            <span class="secondary-information__value">67%</span>
                         </div>
-                        <div class="skills__row">
-                            <span class="skills__name">joomla</span>
-                            <div class="skills__progress-bar">
-                                <div class="skills__progress"></div>
-                            </div>
-                            <span class="skills__value" style="width: 70%">70%</span>
+                        <div class="secondary-information__row">
+                            <span class="secondary-information__name">joomla</span>
+                            <progress class="progress" value="70" max="100">joomla</progress>
+                            <span class="secondary-information__value">70%</span>
                         </div>
-                        <div class="skills__row">
-                            <span class="skills__name">jquery</span>
-                            <div class="skills__progress-bar">
-                                <div class="skills__progress"></div>
-                            </div>
-                            <span class="skills__value" style="width: 58%">58%</span>
+                        <div class="secondary-information__row">
+                            <span class="secondary-information__name">jquery</span>
+                            <progress class="progress" value="58" max="100">jquery</progress>
+                            <span class="secondary-information__value">58%</span>
                         </div>
                     </div>
                 </div>
@@ -193,8 +183,10 @@
                     <img class="post__img" src="img/post1.png">
                 </div>
                 <div class="post__content">
-                    <h4 class="title post__title">summer adventures...</h4>
-                    <span class="post__date">poster: dec 14 2013</span>
+                    <div class="post__header">
+                        <h4 class="title post__title">summer adventures...</h4>
+                        <span class="post__date">poster: dec 14 2013</span>
+                    </div>
                     <p>We can always be on our best or
                         worst behavior,depending on our
                         surroundings and the energy the
@@ -207,8 +199,10 @@
                     <img class="post__img" src="img/post2.png">
                 </div>
                 <div class="post__content">
-                    <h4 class="title post__title">HEROES: DECAT O REVI...</h4>
-                    <span class="post__date">poster: dec 14 2013</span>
+                    <div class="post__header">
+                        <h4 class="title post__title">HEROES: DECAT O REVI...</h4>
+                        <span class="post__date">poster: dec 14 2013</span>
+                    </div>
                     <p>This issue of “Decat o Revista” was
                         about the omnipresent story of the
                         “hero” - a story in wich we all find
@@ -221,8 +215,10 @@
                     <img class="post__img" src="img/post3.png">
                 </div>
                 <div class="post__content">
-                    <h4 class="title post__title">ROMANIAN FOLKLORE</h4>
-                    <span class="post__date">poster: dec 14 2013</span>
+                    <div class="post__header">
+                        <h4 class="title post__title">ROMANIAN FOLKLORE</h4>
+                        <span class="post__date">poster: dec 14 2013</span>
+                    </div>
                     <p>An illustration for a gallery expo at
                         Imbold Gallery. The central theme
                         was romanian folkore and my
@@ -235,8 +231,10 @@
                     <img class="post__img" src="img/post4.png">
                 </div>
                 <div class="post__content">
-                    <h4 class="title post__title">WHAT’S ON DUBAI AND...</h4>
-                    <span class="post__date">poster: dec 14 2013</span>
+                    <div class="post__header">
+                        <h4 class="title post__title">WHAT’S ON DUBAI AND...</h4>
+                        <span class="post__date">poster: dec 14 2013</span>
+                    </div>
                     <p>Let’s take a look at some brilliant
                         cover illustrations created by Ioana
                         Sopov for “What’s On” magazine.
@@ -246,6 +244,28 @@
             </article>
         </div>
     </section>
-
+    <section class="section contact-us">
+        <div class="section__header contact-us__header">
+            <h2 class="title section__title">contact us</h2>
+        </div>
+        <div class="contact-us__wrapper">
+            <div class="main-container contact-us__content section__content">
+                <form action="" method="get" class="contact-form">
+                    <div class="contact-form__row">
+                        <label class="contact-form__label" for="client-name">Name</label>
+                        <input class="form-field contact-form__name" id="client-name" name="client-name" type="text" placeholder="Your name here">
+                        <label class="contact-form__label" for="client-email">Email</label>
+                        <input class="form-field contact-form__email" id="client-email" name="client-email" type="email" placeholder="Email address here">
+                    </div>
+                    <label class="contact-form__label" for="client-message">Your message</label>
+                    <textarea class="form-field contact-form__message" id="client-message" name="client-message" placeholder="Your message here"></textarea>
+                    <button class="button contact-form__button" type="submit">send message now</button>
+                </form>
+            </div>
+            <footer class="footer">
+                <span class="footer__text">&copy; 2014 | Original Grafixity Theme | Powered by WordPress</span>
+            </footer>
+        </div>
+    </section>
 </body>
 </html>
