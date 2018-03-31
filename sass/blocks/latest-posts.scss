@@ -1,0 +1,57 @@
+/*LATEST POSTS*/
+
+.posts__content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 100px;
+}
+
+.post{
+  width: 47%;
+  margin-top: 90px;
+}
+
+.post:last-child{
+  margin-right: 0;
+}
+
+.post__img-box{
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-right: 2%;
+}
+
+.post__img{
+  display: block;
+  width: 100%;
+}
+
+.post__description{
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+.post__header{
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+
+  background-image: url("../img/separating-dash.png");
+  background-size: 80px 4px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.post__title{
+  font-size: 25px;
+}
+
+.post__date{
+  font-family: "Oswald", sans-serif;
+  color: $date;
+  font-size: 15px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,13 @@
+.button{
+  border-radius: 5px;
+  background-color: $orange;
+
+  font-size: 32px;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  box-shadow: 0 1px $button-shadow-grey, inset 0 4px 4px -4px $button-shadow-orange;
+
+  cursor: pointer;
+}

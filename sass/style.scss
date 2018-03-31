@@ -1,0 +1,22 @@
+@import "blocks/colors",
+        "blocks/fonts";
+
+body{
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+}
+
+@import "blocks/paragraph",
+        "blocks/main-container",
+        "blocks/title",
+        "blocks/link",
+        "blocks/list",
+        "blocks/button",
+        "blocks/header",
+        "blocks/promo",
+        "blocks/services",
+        "blocks/portfolio",
+        "blocks/about-us",
+        "blocks/latest-posts",
+        "blocks/contact-form",
+        "blocks/copyright";

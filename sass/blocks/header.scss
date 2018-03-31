@@ -1,0 +1,49 @@
+/*HEADER*/
+
+.header{
+  background-color: $white;
+  color: $header-grey;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo{
+  font-size: 70px;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+
+  display: flex;
+}
+
+.text_orange{
+  color: $orange;
+}
+
+.header__list{
+  display: flex;
+
+  list-style-type: none;
+}
+
+.header__title{
+  font-size: 17px;
+}
+
+.header__link{
+  display: inline-block;
+  padding: 45px 20px;
+
+  font-family: "Oswald", sans-serif ;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  transition: background-color .3s linear;
+}
+
+.header__link:hover{
+  background-color: $orange;
+  color: $white;
+
+  transition: background-color .5s linear;
+}

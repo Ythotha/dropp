@@ -1,0 +1,48 @@
+/*PROMO BANNER*/
+
+.promo{
+  position: relative;
+
+  background-color: $grey-background;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: $white;
+
+}
+
+.promo:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $promo-overlay;
+}
+
+.promo__box{
+  position: relative;
+  padding-top: 230px;
+  padding-bottom: 310px;
+
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo__slogan{
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 120px;
+  text-transform: uppercase;
+
+  text-shadow: $promo-text-shadow 1px 1px 1px;
+}
+
+.promo__link{
+  padding: 6px 60px;
+}

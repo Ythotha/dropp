@@ -1,0 +1,16 @@
+/*PORTFOLIO*/
+
+.portfolio__header{
+  border-top: $section-border solid 1px;
+  border-bottom: none;
+}
+
+.portfolio__content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__item{
+  width: 16.6667%;
+  height: 100%;
+}
