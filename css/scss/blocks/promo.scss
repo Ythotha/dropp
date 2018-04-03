@@ -22,8 +22,8 @@
 
 .promo__box{
   position: relative;
-  padding-top: 230px;
-  padding-bottom: 310px;
+  padding-top: 14.375rem;
+  padding-bottom: 19.375rem;
 
   font-family: "Oswald", sans-serif;
   text-align: center;
@@ -35,14 +35,14 @@
 
 .promo__slogan{
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 
-  font-size: 120px;
+  font-size: 7.5rem;
   text-transform: uppercase;
 
   text-shadow: $promo-text-shadow 1px 1px 1px;
 }
 
 .promo__link{
-  padding: 6px 60px;
+  padding: 0.375rem 3.75rem;
 }

@@ -9,7 +9,7 @@
 }
 
 .header__logo{
-  font-size: 70px;
+  font-size: 4.375rem;
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
 
@@ -26,13 +26,9 @@
   list-style-type: none;
 }
 
-.header__title{
-  font-size: 17px;
-}
-
 .header__link{
   display: inline-block;
-  padding: 45px 20px;
+  padding: 2.8125rem 1.25rem;
 
   font-family: "Oswald", sans-serif ;
   font-weight: 700;
