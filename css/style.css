@@ -91,7 +91,6 @@ p:nth-child(n+1) {
   list-style-type: none; }
 
 .header__link {
-  display: inline-block;
   padding: 2.8125rem 1.25rem;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -168,7 +167,7 @@ p:nth-child(n+1) {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 4.0625rem;
@@ -182,7 +181,7 @@ p:nth-child(n+1) {
   margin-right: 5%; }
 
 .services__item:nth-child(n+4) {
-  margin-top: 1.25rem; }
+  margin-top: 4.0625rem; }
 
 .service__icon {
   fill: #fd5433;
@@ -348,20 +347,29 @@ p:nth-child(n+1) {
 
 .post__header {
   padding-bottom: 0.625rem;
-  margin-bottom: 1.875rem;
-  background-image: url("../img/separating-dash.png");
-  background-size: 80px 4px;
-  background-repeat: no-repeat;
-  background-position: left bottom; }
+  margin-bottom: 1.875rem; }
 
 .post__title {
   font-size: 1.5625rem; }
 
 .post__date {
+  display: block;
+
   font-family: "Oswald", sans-serif;
   color: #686868;
   font-size: 0.9375rem;
   text-transform: uppercase; }
+
+.post__separator{
+  display: inline-block;
+
+  width: 5rem;
+  height: 0.25rem;
+
+  border: none;
+
+  background-color: #fd5433;
+}
 
 /*CONTACT FORM*/
 .contact-us__content {
@@ -445,3 +453,34 @@ p:nth-child(n+1) {
   font-size: 1.125rem;
   color: #ffffff;
   text-align: center; }
+
+
+@media screen and (max-width: 1023px){
+  .header__link{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .post__img-box{
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .post__description{
+    display: block;
+    width: 100%;
+  }
+
+  .contact-form__row{
+    flex-direction: column;
+  }
+
+  .contact-form__field_half-size{
+    width: 100%;
+  }
+
+  .contact-form__field_half-size:nth-child(n+2){
+    margin-top: 1.25rem;
+  }
+}
