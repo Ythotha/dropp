@@ -71,12 +71,12 @@
   margin-top: 3.125rem;
 }
 
-.about__link{
-  margin-right: 1.25rem;
+.about__link:nth-child(n+2){
+  margin-left: 1.25rem;
 }
 
-.about__link:last-child{
-  margin-right: 0;
+.about__link:hover, .about__link:focus{
+  opacity: 0.5;
 }
 
 .secondary-information__row{
@@ -112,4 +112,19 @@
 
 .about__progress::-webkit-progress-value{
   background-color: $white;
+}
+
+@media (max-width: 767px) {
+  .about__columns{
+    flex-direction: column;
+  }
+  .about__member-main-info{
+    width: 100%;
+  }
+
+  .about__member-skills{
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 0;
+  }
 }

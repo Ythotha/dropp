@@ -12,5 +12,21 @@
 
 .portfolio__item{
   width: 16.6667%;
+}
+
+.portfolio__item:hover:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(226, 69, 38, 0.75);
+}
+
+.portfolio__img{
+  width: 100%;
   height: 100%;
 }

@@ -11,3 +11,13 @@
 
   cursor: pointer;
 }
+
+.button:hover, .button:focus{
+  background-color: #ff765b;
+}
+
+@media (max-width: 320px) {
+  .button{
+    font-size: 1.75rem;
+  }
+}
