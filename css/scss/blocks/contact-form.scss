@@ -1,7 +1,7 @@
 /*CONTACT FORM*/
 
 .contact-us__content{
-  padding-top: 1.875rem;
+  padding-top: 3rem;
 
   background-image: url("../img/bg-city-img.png");
   background-color: #b9b9b9;
@@ -14,19 +14,20 @@
   border-bottom: none;
 }
 
-.contact-form{
-  width: 100%;
-}
-
 .contact-form__row{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .contact-form__field_half-size{
-  width: 49%;
+  width: 100%;
+}
+
+.contact-form__field_half-size:nth-child(n+2){
+  margin-top: 2rem;
 }
 
 .contact-form__field_full-size{
@@ -52,7 +53,7 @@
 
 .contact-form__message{
   width: 100%;
-  height: 228px;
+  height: auto;
   resize: none;
 
   padding-top: 0.9375rem;
@@ -64,13 +65,31 @@
   display: block;
 
   width: 100%;
-  margin-top: 1.25rem;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   border: none;
 
   font-family: Oswald, sans-serif;
-  font-size: 1.625rem;
+  font-size: 2.6rem;
   font-weight: 700;
+}
+
+@media (min-width: 1024px){
+  .contact-form__row{
+    flex-direction: row;
+  }
+
+  .contact-form__field_half-size{
+    width: 48%;
+  }
+
+  .contact-form__field_half-size:nth-child(n+2){
+    margin-top: 0;
+  }
+
+  .contact-form__message{
+    min-height: 228px;
+  }
 }

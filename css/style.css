@@ -187,7 +187,7 @@ p:nth-child(n+1) {
   }
 
   .promo__slogan{
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -334,8 +334,8 @@ p:nth-child(n+1) {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /*max-width: 19%;*/
-  padding-top: 4.375rem;
-  padding-bottom: 4.375rem; }
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
 
 .about__member:nth-child(n+2){
   margin-left: 4%;
@@ -387,8 +387,10 @@ p:nth-child(n+1) {
 }
 
 .about__title {
+  font-size: 1.8rem;
   text-transform: none;
-  margin-bottom: 1.875rem; }
+
+  margin-bottom: 3rem; }
 
 .about__socials {
   display: -webkit-box;
@@ -484,8 +486,21 @@ p:nth-child(n+1) {
   width: 49%; }
 
 .post__header {
+  position: relative;
+
   padding-bottom: 0.625rem;
   margin-bottom: 1.875rem; }
+
+.post__header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #fd5433;
+}
 
 .post__title {
   font-size: 1.5625rem; }
@@ -497,17 +512,6 @@ p:nth-child(n+1) {
   color: #686868;
   font-size: 0.9375rem;
   text-transform: uppercase; }
-
-.post__separator{
-  display: inline-block;
-
-  width: 5rem;
-  height: 0.25rem;
-
-  border: none;
-
-  background-color: #fd5433;
-}
 
 @media (min-width: 1024px) {
   .post__img-box{
@@ -643,5 +647,9 @@ p:nth-child(n+1) {
 
   .contact-form__field_half-size:nth-child(n+2){
     margin-top: 1.25rem;
+  }
+
+  .contact-form__message{
+      height: auto;
   }
 }

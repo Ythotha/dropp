@@ -7,10 +7,13 @@
 
 .about__member{
   box-sizing: border-box;
-  width: 19%;
-  /*margin-right: 4%;*/
-  padding-top: 4.375rem;
-  padding-bottom: 4.375rem;
+  /*max-width: 19%;*/
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.about__member:nth-child(n+2){
+  margin-left: 4%;
 }
 
 .about__member_active{
@@ -26,82 +29,78 @@
   content: "";
   width: 0;
   height: 0;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 36px solid $white;
+  border-left: 1.8rem solid transparent;
+  border-right: 1.8rem solid transparent;
+  border-top: 3.6rem solid $white;
 }
 
-.about__member-img{
-  width: 100%;
-}
-
-.about__information{
+.about__member-info{
   background-color: $orange;
 
-  padding-top: 5rem;
-  padding-bottom: 3.75rem;
-  /*padding-top: 70px;
-  padding-bottom: 45px;*/
+  padding-top: 8rem;
+  padding-bottom: 6rem;
 }
 
 .about__columns{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 
   color: $white;
 }
 
-.about__column{
-  width: 48%;
-}
-
-.about__column:last-child{
-  margin-right: 0;
+.about__member-main-info{
+  width: 100%;
 }
 
 .about__title{
+  font-size: 1.8rem;
   text-transform: none;
 
-  margin-bottom: 1.875rem;
+  margin-bottom: 3rem;
 }
 
 .about__socials{
   display: flex;
 
-  margin-top: 3.125rem;
+  margin-top: 5rem;
 }
 
 .about__link:nth-child(n+2){
-  margin-left: 1.25rem;
+  margin-left: 2rem;
 }
 
 .about__link:hover, .about__link:focus{
   opacity: 0.5;
 }
 
-.secondary-information__row{
-  margin-bottom: 0.625rem;
+.about__member-skills{
+  width: 100%;
+  margin-top: 10%;
 }
 
-.secondary-information__row:last-child{
-  margin-bottom: 0;
+.about__member-skill:nth-of-type(n+2) {
+  margin-top: 0.625rem;
 }
 
-.secondary-information__name{
+.about__member-skill-name{
   display: inline-block;
-  vertical-align: top;
-  min-width: 6.875rem;
+  vertical-align: middle;
+  min-width: 11rem;
 
   text-transform: uppercase;
 }
 
-.about__progress{
+.about__member-skill-progress{
+  display: inline-block;
+  vertical-align: middle;
+
   color: $white;
   background-color: $white;
   height: 10px;
 
   width:50%;
-  /*margin-left: 10%*/;
+  margin-left: 2%;
   margin-right: 1%;
   margin-bottom: 0.3125rem;
 }
@@ -114,17 +113,22 @@
   background-color: $white;
 }
 
-@media (max-width: 767px) {
+.about__member-skill-value{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
   .about__columns{
-    flex-direction: column;
+    flex-direction: row;
   }
   .about__member-main-info{
-    width: 100%;
+    width: 48%;
   }
 
   .about__member-skills{
-    width: 100%;
-    margin-top: 10%;
-    margin-left: 0;
+    width: 48%;
+    margin-top: 0;
+    margin-left: 2%;
   }
 }
