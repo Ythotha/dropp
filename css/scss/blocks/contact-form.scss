@@ -14,32 +14,24 @@
   border-bottom: none;
 }
 
-.contact-form__row{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-
+.contact-form__personal-info{
   margin-bottom: 2rem;
 }
 
-.contact-form__field_half-size{
-  width: 100%;
-}
-
-.contact-form__field_half-size:nth-child(n+2){
+.contact-form__email-box{
   margin-top: 2rem;
 }
 
-.contact-form__field_full-size{
-  width: 100%;
-}
-
 .contact-form__label{
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .form-field{
-  font-size: 1.25rem;
+  font-size: 2rem;
 
   box-sizing: border-box;
 
@@ -52,10 +44,6 @@
 }
 
 .contact-form__message{
-  width: 100%;
-  height: auto;
-  resize: none;
-
   padding-top: 0.9375rem;
 
   font-family: inherit;
@@ -77,16 +65,18 @@
 }
 
 @media (min-width: 1024px){
-  .contact-form__row{
-    flex-direction: row;
+  .contact-form__personal-info{
+    display: flex;
   }
 
-  .contact-form__field_half-size{
-    width: 48%;
+  .contact-form__name-box{
+    width: 49%;
   }
 
-  .contact-form__field_half-size:nth-child(n+2){
+  .contact-form__email-box{
+    width: 49%;
     margin-top: 0;
+    margin-left: 2%;
   }
 
   .contact-form__message{

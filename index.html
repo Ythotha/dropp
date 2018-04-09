@@ -15,6 +15,9 @@
             <span>pp</span>
         </div>
         <nav class="header__nav">
+            <button class="hamburger">
+                <span class="hamburger__label">Open menu</span>
+            </button>
             <ul class="list header__list">
                 <li class="header__list-item">
                     <a class="link header__link" href="#">home</a>
@@ -103,42 +106,42 @@
             <h2 class="title section__title">portfolio</h2>
         </div>
         <div class="section__content portfolio__content">
-            <div class="portfolio__item">
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio10.png" alt="portfolio image 1">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio11.png" alt="portfolio image 2">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio12.png" alt="portfolio image 3">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio13.png" alt="portfolio image 4">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio14.png" alt="portfolio image 5">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio15.png" alt="portfolio image 6">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio20.png" alt="portfolio image 7">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio21.png" alt="portfolio image 8">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio22.png" alt="portfolio image 9">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio23.png" alt="portfolio image 10">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio24.png" alt="portfolio image 11">
-            </div>
-            <div class="portfolio__item">
+            </a>
+            <a class="portfolio__item">
                 <img class="portfolio__img" src="img/portfolio/portfolio25.png" alt="portfolio image 12">
-            </div>
+            </a>
 
         </div>
     </section>
@@ -146,7 +149,7 @@
         <div class="section__header">
             <h2 class="title section__title">about us</h2>
         </div>
-        <div class="section__content about__content">
+        <div class="section__content">
             <div class="main-container about__members">
                 <div class="about__member">
                     <img class="about__member-img" src="img/about1.png" alt="member 1">
@@ -311,17 +314,17 @@
         <div class="contact-us__content">
             <div class="section__content">
                 <form action="" method="get" class="main-container contact-form">
-                    <div class="contact-form__row">
-                        <div class="contact-form__field_half-size">
+                    <div class="contact-form__personal-info">
+                        <div class="contact-form__name-box">
                             <label class="contact-form__label" for="client-name">Name</label>
                             <input class="form-field contact-form__name" id="client-name" name="client-name" type="text" placeholder="Your name here">
                         </div>
-                        <div class="contact-form__field_half-size">
+                        <div class="contact-form__email-box">
                             <label class="contact-form__label" for="client-email">Email</label>
                             <input class="form-field contact-form__email" id="client-email" name="client-email" type="email" placeholder="Email address here">
                         </div>
                     </div>
-                    <div class="contact-form__field_full-size">
+                    <div class="contact-form__message-box">
                         <label class="contact-form__label" for="client-message">Your message</label>
                         <textarea class="form-field contact-form__message" id="client-message" name="client-message" placeholder="Your message here"></textarea>
                     </div>
@@ -333,5 +336,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

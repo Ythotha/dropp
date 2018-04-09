@@ -1,47 +1,20 @@
 /*LATEST POSTS*/
 
 .posts__content{
-  display: flex;
-  justify-content: space-between;
-
   margin-bottom: 10rem;
-}
-
-.post{
-  flex-direction: column;
-  width: 100%;
-  width: 47%;
-  margin-top: 9rem;
-}
-
-.post__img-box{
-  display: inline-block;
-  vertical-align: top;
-  width: 45%;
-  margin-right: 2%;
-}
-
-.post__img-box {
-  width: 100%;
-  max-height: 200px;
-  overflow: hidden;
+  padding-top: 9rem;
 }
 
 .post__img{
-  display: block;
-  width: 100%;
-}
-
-.post__description{
-  display: inline-block;
-  vertical-align: top;
-  width: 49%;
+  max-width: 100%;
 }
 
 .post__header{
+  position: relative;
+
   margin-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .post__header:after{
@@ -66,32 +39,46 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-  .post{
-    flex-direction: row;
-    flex-wrap: wrap;
+@media (max-width: 699px){
+  .post:nth-child(n+2){
+    margin-top: 9rem;
+  }
+}
 
+@media (min-width: 700px){
+  .posts__content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .post{
     width: 48%;
   }
 
   .post:nth-child(even){
     margin-left: 2%;
   }
+
+  .post:nth-child(n+3){
+    margin-top: 9rem;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
+  .post{
+    display: flex;
+  }
+
   .post__img-box{
-    margin-right: 2%;
-    width: 45%;
+    width: 48%;
   }
-}
 
-@media (max-width: 1023px) {
+  .post__description{
+    width: 48%;
+    margin-left: 4%;
+  }
+
   .post__header{
-    margin-top: 1rem;
-  }
-
-  .post__description {
-    width: 100%;
+    margin-bottom: 3rem;
   }
 }

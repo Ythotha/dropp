@@ -2,68 +2,43 @@
 
 .about__members{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .about__member{
   box-sizing: border-box;
-  /*max-width: 19%;*/
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  max-width: 48%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
-.about__member:nth-child(n+2){
-  margin-left: 4%;
-}
-
-.about__member_active{
-  position: relative;
-}
-
-.about__member_active:after{
-  position: absolute;
-  bottom: 1px;
-  left: 50%;
-  transform: translate(-50%, 100%);
-
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 1.8rem solid transparent;
-  border-right: 1.8rem solid transparent;
-  border-top: 3.6rem solid $white;
+.about__member-img{
+  max-width: 100%;
 }
 
 .about__member-info{
   background-color: $orange;
 
-  padding-top: 8rem;
-  padding-bottom: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 .about__columns{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-
   color: $white;
-}
-
-.about__member-main-info{
-  width: 100%;
 }
 
 .about__title{
   font-size: 1.8rem;
   text-transform: none;
 
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .about__socials{
   display: flex;
 
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .about__link:nth-child(n+2){
@@ -75,8 +50,14 @@
 }
 
 .about__member-skills{
-  width: 100%;
-  margin-top: 10%;
+  margin-top: 4rem;
+}
+
+.about__member-skill{
+  display: flex;
+  align-items: center;
+
+  font-size: 1.6rem;
 }
 
 .about__member-skill:nth-of-type(n+2) {
@@ -84,43 +65,45 @@
 }
 
 .about__member-skill-name{
-  display: inline-block;
-  vertical-align: middle;
   min-width: 11rem;
 
   text-transform: uppercase;
 }
 
 .about__member-skill-progress{
-  display: inline-block;
-  vertical-align: middle;
-
   color: $white;
   background-color: $white;
-  height: 10px;
+  height: 1rem;
 
-  width:50%;
-  margin-left: 2%;
-  margin-right: 1%;
-  margin-bottom: 0.3125rem;
+  /*max-width: 10.9rem;*/
+  width: 49%;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.about__progress::-webkit-progress-bar{
+.about__member-skill-progress{
   background-color: $orange;
 }
 
-.about__progress::-webkit-progress-value{
+.about__member-skill-progress::-webkit-progress-bar{
+  background-color: $orange;
+}
+
+.about__member-skill-progress::-webkit-progress-value{
   background-color: $white;
 }
 
-.about__member-skill-value{
-  display: inline-block;
-  vertical-align: middle;
+.about__member-skill-progress::-moz-progress-bar{
+  background-color: $white;
 }
 
 @media (min-width: 768px) {
+  .about__member{
+    max-width: 19%;
+  }
+
   .about__columns{
-    flex-direction: row;
+    display: flex;
   }
   .about__member-main-info{
     width: 48%;
@@ -130,5 +113,37 @@
     width: 48%;
     margin-top: 0;
     margin-left: 2%;
+  }
+}
+
+@media (max-width: 721px){
+  .about__member:nth-child(even){
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: 722px){
+  .about__member:nth-child(n+2){
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: 1024px){
+  .about__member_active{
+    position: relative;
+  }
+
+  .about__member_active:after{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 1.8rem solid transparent;
+    border-right: 1.8rem solid transparent;
+    border-top: 3.6rem solid $white;
   }
 }
