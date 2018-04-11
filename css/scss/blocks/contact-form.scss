@@ -30,16 +30,18 @@
   margin: -1px;
 }
 
-.form-field{
+.contact-form__field{
   font-size: 2rem;
 
   box-sizing: border-box;
 
   width: 100%;
   padding: 1.25rem;
+
+  border: none;
 }
 
-.form-field::placeholder{
+.contact-form__field::placeholder{
   color: $orange;
 }
 
