@@ -66,6 +66,12 @@
   font-weight: 700;
 }
 
+@media (max-width: 800px){
+  .contact-us__content{
+    background-image: url("../img/bg-city-img-800.png");
+  }
+}
+
 @media (min-width: 1024px){
   .contact-form__personal-info{
     display: flex;

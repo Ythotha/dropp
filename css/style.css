@@ -77,8 +77,11 @@ p:nth-child(n+2) {
 
 /*HEADER*/
 .header {
-  background-color: #ffffff;
-  color: #565656;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +90,9 @@ p:nth-child(n+2) {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #ffffff;
+  color: #565656; }
 
 .header__logo {
   font-size: 7rem;
@@ -169,13 +174,30 @@ p:nth-child(n+2) {
 
 .header__list {
   display: none;
-  list-style-type: none; }
+  list-style-type: none;
+  width: 40%;
+  z-index: 999; }
+
+.header__list_open {
+  position: fixed;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #ffffff; }
 
 .header__link {
-  padding: 0.5rem;
+  width: 100%;
+  padding: 1rem 0.5rem;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
   -webkit-transition: background-color .3s linear;
   transition: background-color .3s linear; }
 
@@ -187,9 +209,12 @@ p:nth-child(n+2) {
 
 @media (min-width: 768px) {
   .header__link {
-    padding: 4.5rem 1.5rem; } }
+    padding-right: 1.5rem;
+    padding-left: 1.5rem; } }
 
 @media (min-width: 1024px) {
+  .header {
+    position: static; }
   .hamburger {
     display: none; }
   .header__list {
@@ -199,11 +224,12 @@ p:nth-child(n+2) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    position: static; }
   .header__link {
-    font-size: 1.7rem;
-    padding-left: 2rem;
-    padding-right: 2rem; } }
+    width: auto;
+    /*font-size: 1.7rem;*/
+    padding: 4.5rem 2rem; } }
 
 /*PROMO BANNER*/
 .promo {
@@ -246,6 +272,14 @@ p:nth-child(n+2) {
 
 .promo__link {
   padding: 0.6rem 3rem; }
+
+@media (max-width: 767px) {
+  .promo {
+    margin-top: 10rem; } }
+
+@media (max-width: 800px) {
+  .promo {
+    background-image: url("../img/banner-800.png"); } }
 
 @media (min-width: 768px) {
   .promo__box {
@@ -351,7 +385,7 @@ p:nth-child(n+2) {
   left: 0;
   content: "";
   width: 100%;
-  height: 100%;
+  padding-top: 85.3242%;
   background-color: rgba(226, 69, 38, 0.75);
   cursor: pointer; }
 
@@ -359,6 +393,7 @@ p:nth-child(n+2) {
   display: none; }
 
 .portfolio__img {
+  display: block;
   max-width: 100%; }
 
 @media (max-width: 767px) {
@@ -396,7 +431,6 @@ p:nth-child(n+2) {
 .about__member {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  max-width: 48%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
 
@@ -405,8 +439,7 @@ p:nth-child(n+2) {
 
 .about__member-info {
   background-color: #fd5433;
-  padding-top: 4rem;
-  padding-bottom: 3rem; }
+  padding: 4rem 2rem 3rem; }
 
 .about__columns {
   color: #ffffff; }
@@ -469,19 +502,33 @@ p:nth-child(n+2) {
 .about__member-skill-progress::-moz-progress-bar {
   background-color: #ffffff; }
 
+/*123*/
+.about__input {
+  display: none; }
+
+.about__input:checked + label {
+  background-color: #eaeaea; }
+
+.about__member-info {
+  display: none;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1; }
+
+.about__input:checked + label + .about__member-info {
+  display: block; }
+
 @media (min-width: 768px) {
-  .about__member {
-    max-width: 19%; }
   .about__columns {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   .about__member-main-info {
-    width: 48%; }
+    width: 45%; }
   .about__member-skills {
-    width: 48%;
+    width: 45%;
     margin-top: 0;
-    margin-left: 2%; } }
+    margin-left: 8%; } }
 
 @media (max-width: 721px) {
   .about__member:nth-child(even) {
@@ -505,7 +552,9 @@ p:nth-child(n+2) {
     height: 0;
     border-left: 1.8rem solid transparent;
     border-right: 1.8rem solid transparent;
-    border-top: 3.6rem solid #ffffff; } }
+    border-top: 3.6rem solid #ffffff; }
+  .about__member-skill-progress {
+    width: 60%; } }
 
 /*LATEST POSTS*/
 .posts__content {
@@ -629,6 +678,10 @@ p:nth-child(n+2) {
   font-family: Oswald, sans-serif;
   font-size: 2.6rem;
   font-weight: 700; }
+
+@media (max-width: 800px) {
+  .contact-us__content {
+    background-image: url("../img/bg-city-img-800.png"); } }
 
 @media (min-width: 1024px) {
   .contact-form__personal-info {

@@ -46,6 +46,18 @@
   padding: 0.6rem 3rem;
 }
 
+@media (max-width: 767px) {
+  .promo {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 800px){
+  .promo{
+    background-image: url("../img/banner-800.png");
+  }
+}
+
 @media (min-width: 768px) {
   .promo__box{
     padding-top: 23rem;

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DROPP</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
     <header class="main-container header">
@@ -87,18 +86,6 @@
                         ad minim veniam, quis nostrud</p>
                 </div>
             </article>
-            <article class="service services__item">
-                <svg class="service__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 299">
-                    <path d="M185.5 247v-16h-26v-24.6c20-1.7 37-15.7 42.8-34.6 1.4-4.6 2.2-9.4 2.2-14.4V119h-6v5h-4V61.1c0-24.3-20.3-44.1-44.6-44.1h-.5c-24.3 0-43.9 19.8-43.9 44.1V124h-4v-5h-6v38.4c0 5 .8 9.9 2.2 14.4 5.8 18.9 21.8 32.8 42.8 34.6V231h-25v16h-23v22h115v-22h-22zm3-115h-19v6h19v8h-19v6h19v1.7c0 2-.1 4.3-.4 5.3h-76.9c-.3-1 .3-3.4.3-5.3V152h19v-6h-19v-8h19v-6h-19v-9h19v-5h-19v-9h19v-5h-19v-9h19v-6h-19v-8h19v-6h-19v-9h19v-5h-19.8c0-3 .3-5 .8-8h76.1c.5 3 .8 5 .8 8h-19v5h19v9h-19v6h19v8h-19v6h19v9h-19v5h19v9h-19v5h19v9zm-1.6 33c-4.8 16-19.6 27-37 27h-.5c-17.4 0-32.1-11-37-27h74.5zM149.4 22h.5c16.6 0 30.7 11 36.2 26h-73c5.5-15 19.7-26 36.3-26zm-47.9 135.2V130h4v23.7c0 24.3 19.5 44.3 43.9 44.3h.5c24.3 0 44.6-20 44.6-44.3V130h4v27.2c0 24.1-19.7 43.8-43.8 43.8h-10.1c-24.1 0-43.1-19.7-43.1-43.8zm45 49.8h7v24h-7v-24zm-26 29H180.5v11h-60v-11zm82 28h-105v-11H202.5v11zm-53 35C67.1 299 0 231.9 0 149.5S67.1 0 149.5 0 299 67.1 299 149.5 231.9 299 149.5 299zm0-294C69.8 5 5 69.8 5 149.5S69.8 294 149.5 294 294 229.2 294 149.5 229.2 5 149.5 5z"/>
-                </svg>
-                <h3 class="title service__name">marketing</h3>
-                <div class="service__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor
-                        ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud</p>
-                </div>
-            </article>
         </div>
     </section>
     <section class="section portfolio">
@@ -151,77 +138,275 @@
         </div>
         <div class="section__content">
             <div class="main-container about__members">
-                <div class="about__member">
-                    <img class="about__member-img" src="img/about1.png" alt="member 1">
-                </div>
-                <div class="about__member about__member_active">
-                    <img class="about__member-img" src="img/about2.png" alt="member 2">
-                </div>
-                <div class="about__member">
-                    <img class="about__member-img" src="img/about3.png" alt="member 3">
-                </div>
-                <div class="about__member">
-                    <img class="about__member-img" src="img/about4.png" alt="member 4">
-                </div>
-            </div>
-            <div class="about__member-info">
-                <div class="main-container about__columns">
-                    <div class="about__member-main-info">
-                        <h3 class="title about__title">John Smith - Lead Graphic Artist</h3>
-                        <div class="about__description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                laborum.
-                            </p>
+                <input class="about__input" id="tab-one" type="radio" name="grp" checked="checked"/>
+                <label for="tab-one">
+                    <div class="about__member">
+                        <img class="about__member-img" src="img/about1.png" alt="member 1">
+                    </div>
+                </label>
+                <div class="about__member-info">
+                    <div class="about__columns">
+                        <div class="about__member-main-info">
+                            <h3 class="title about__title">John Smith - Lead Graphic Artist</h3>
+                            <div class="about__description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.
+                                </p>
+                            </div>
+                            <div class="about__socials">
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/facebook.svg" alt="facebook">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/googleplus.svg" alt="google plus">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/vimeo.svg" alt="vimeo">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/dribbble4.svg" alt="dribble">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/youtube.svg" alt="youtube">
+                                </a>
+                            </div>
                         </div>
-                        <div class="about__socials">
-                            <a href="#" class="about__link">
-                                <img class="about__social" src="img/facebook.svg" alt="facebook">
-                            </a>
-                            <a href="#" class="about__link">
-                                <img class="about__social" src="img/googleplus.svg" alt="google plus">
-                            </a>
-                            <a href="#" class="about__link">
-                                <img class="about__social" src="img/vimeo.svg" alt="vimeo">
-                            </a>
-                            <a href="#" class="about__link">
-                                <img class="about__social" src="img/dribbble4.svg" alt="dribble">
-                            </a>
-                            <a href="#" class="about__link">
-                                <img class="about__social" src="img/youtube.svg" alt="youtube">
-                            </a>
+                        <div class="about__member-skills">
+                            <h3 class="title about__title">Skills</h3>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">photoshop</span>
+                                <progress class="about__member-skill-progress" value="100" max="100">photoshop</progress>
+                                <span class="secondary-information__value">100%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">illustrator</span>
+                                <progress class="about__member-skill-progress" value="98" max="100">illustrator</progress>
+                                <span class="secondary-information__value">98%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">wordpress</span>
+                                <progress class="about__member-skill-progress" value="67" max="100">wordpress</progress>
+                                <span class="secondary-information__value">67%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">joomla</span>
+                                <progress class="about__member-skill-progress" value="70" max="100">joomla</progress>
+                                <span class="secondary-information__value">70%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">jquery</span>
+                                <progress class="about__member-skill-progress" value="58" max="100">jquery</progress>
+                                <span class="secondary-information__value">58%</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="about__member-skills">
-                        <h3 class="title about__title">Skills</h3>
-                        <div class="about__member-skill">
-                            <span class="about__member-skill-name">photoshop</span>
-                            <progress class="about__member-skill-progress" value="100" max="100">photoshop</progress>
-                            <span class="secondary-information__value">100%</span>
+                </div>
+                <input class="about__input" id="tab-two" type="radio" name="grp"/>
+                <label for="tab-two">
+                    <div class="about__member">
+                        <img class="about__member-img" src="img/about2.png" alt="member 2">
+                    </div>
+                </label>
+                <div class="about__member-info">
+                    <div class="about__columns">
+                        <div class="about__member-main-info">
+                            <h3 class="title about__title">John Smith - Lead Graphic Artist</h3>
+                            <div class="about__description">
+                                <p>2222Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.
+                                </p>
+                            </div>
+                            <div class="about__socials">
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/facebook.svg" alt="facebook">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/googleplus.svg" alt="google plus">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/vimeo.svg" alt="vimeo">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/dribbble4.svg" alt="dribble">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/youtube.svg" alt="youtube">
+                                </a>
+                            </div>
                         </div>
-                        <div class="about__member-skill">
-                            <span class="about__member-skill-name">illustrator</span>
-                            <progress class="about__member-skill-progress" value="98" max="100">illustrator</progress>
-                            <span class="secondary-information__value">98%</span>
+                        <div class="about__member-skills">
+                            <h3 class="title about__title">Skills</h3>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">photoshop</span>
+                                <progress class="about__member-skill-progress" value="100" max="100">photoshop</progress>
+                                <span class="secondary-information__value">100%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">illustrator</span>
+                                <progress class="about__member-skill-progress" value="98" max="100">illustrator</progress>
+                                <span class="secondary-information__value">98%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">wordpress</span>
+                                <progress class="about__member-skill-progress" value="67" max="100">wordpress</progress>
+                                <span class="secondary-information__value">67%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">joomla</span>
+                                <progress class="about__member-skill-progress" value="70" max="100">joomla</progress>
+                                <span class="secondary-information__value">70%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">jquery</span>
+                                <progress class="about__member-skill-progress" value="58" max="100">jquery</progress>
+                                <span class="secondary-information__value">58%</span>
+                            </div>
                         </div>
-                        <div class="about__member-skill">
-                            <span class="about__member-skill-name">wordpress</span>
-                            <progress class="about__member-skill-progress" value="67" max="100">wordpress</progress>
-                            <span class="secondary-information__value">67%</span>
+                    </div>
+                </div>
+                <input class="about__input" id="tab-three" type="radio" name="grp"/>
+                <label for="tab-three">
+                    <div class="about__member">
+                        <img class="about__member-img" src="img/about3.png" alt="member 3">
+                    </div>
+                </label>
+                <div class="about__member-info">
+                    <div class="about__columns">
+                        <div class="about__member-main-info">
+                            <h3 class="title about__title">John Smith - Lead Graphic Artist</h3>
+                            <div class="about__description">
+                                <p>3333Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.
+                                </p>
+                            </div>
+                            <div class="about__socials">
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/facebook.svg" alt="facebook">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/googleplus.svg" alt="google plus">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/vimeo.svg" alt="vimeo">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/dribbble4.svg" alt="dribble">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/youtube.svg" alt="youtube">
+                                </a>
+                            </div>
                         </div>
-                        <div class="about__member-skill">
-                            <span class="about__member-skill-name">joomla</span>
-                            <progress class="about__member-skill-progress" value="70" max="100">joomla</progress>
-                            <span class="secondary-information__value">70%</span>
+                        <div class="about__member-skills">
+                            <h3 class="title about__title">Skills</h3>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">photoshop</span>
+                                <progress class="about__member-skill-progress" value="100" max="100">photoshop</progress>
+                                <span class="secondary-information__value">100%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">illustrator</span>
+                                <progress class="about__member-skill-progress" value="98" max="100">illustrator</progress>
+                                <span class="secondary-information__value">98%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">wordpress</span>
+                                <progress class="about__member-skill-progress" value="67" max="100">wordpress</progress>
+                                <span class="secondary-information__value">67%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">joomla</span>
+                                <progress class="about__member-skill-progress" value="70" max="100">joomla</progress>
+                                <span class="secondary-information__value">70%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">jquery</span>
+                                <progress class="about__member-skill-progress" value="58" max="100">jquery</progress>
+                                <span class="secondary-information__value">58%</span>
+                            </div>
                         </div>
-                        <div class="about__member-skill">
-                            <span class="about__member-skill-name">jquery</span>
-                            <progress class="about__member-skill-progress" value="58" max="100">jquery</progress>
-                            <span class="secondary-information__value">58%</span>
+                    </div>
+                </div>
+                <input class="about__input" id="tab-four" type="radio" name="grp"/>
+                <label for="tab-four">
+                    <div class="about__member">
+                        <img class="about__member-img" src="img/about4.png" alt="member 4">
+                    </div>
+                </label>
+                <div class="about__member-info">
+                    <div class="about__columns">
+                        <div class="about__member-main-info">
+                            <h3 class="title about__title">John Smith - Lead Graphic Artist</h3>
+                            <div class="about__description">
+                                <p>4444Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.
+                                </p>
+                            </div>
+                            <div class="about__socials">
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/facebook.svg" alt="facebook">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/googleplus.svg" alt="google plus">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/vimeo.svg" alt="vimeo">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/dribbble4.svg" alt="dribble">
+                                </a>
+                                <a href="#" class="about__link">
+                                    <img class="about__social" src="img/youtube.svg" alt="youtube">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="about__member-skills">
+                            <h3 class="title about__title">Skills</h3>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">photoshop</span>
+                                <progress class="about__member-skill-progress" value="100" max="100">photoshop</progress>
+                                <span class="secondary-information__value">100%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">illustrator</span>
+                                <progress class="about__member-skill-progress" value="98" max="100">illustrator</progress>
+                                <span class="secondary-information__value">98%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">wordpress</span>
+                                <progress class="about__member-skill-progress" value="67" max="100">wordpress</progress>
+                                <span class="secondary-information__value">67%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">joomla</span>
+                                <progress class="about__member-skill-progress" value="70" max="100">joomla</progress>
+                                <span class="secondary-information__value">70%</span>
+                            </div>
+                            <div class="about__member-skill">
+                                <span class="about__member-skill-name">jquery</span>
+                                <progress class="about__member-skill-progress" value="58" max="100">jquery</progress>
+                                <span class="secondary-information__value">58%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -317,16 +502,16 @@
                     <div class="contact-form__personal-info">
                         <div class="contact-form__name-box">
                             <label class="contact-form__label" for="client-name">Name</label>
-                            <input class="form-field contact-form__name" id="client-name" name="client-name" type="text" placeholder="Your name here">
+                            <input class="contact-form__field contact-form__name" id="client-name" name="client-name" type="text" placeholder="Your name here">
                         </div>
                         <div class="contact-form__email-box">
                             <label class="contact-form__label" for="client-email">Email</label>
-                            <input class="form-field contact-form__email" id="client-email" name="client-email" type="email" placeholder="Email address here">
+                            <input class="contact-form__field contact-form__email" id="client-email" name="client-email" type="email" placeholder="Email address here">
                         </div>
                     </div>
                     <div class="contact-form__message-box">
                         <label class="contact-form__label" for="client-message">Your message</label>
-                        <textarea class="form-field contact-form__message" id="client-message" name="client-message" placeholder="Your message here"></textarea>
+                        <textarea class="contact-form__field contact-form__message" id="client-message" name="client-message" placeholder="Your message here"></textarea>
                     </div>
                     <button class="button contact-form__button">send message now</button>
                 </form>
@@ -338,6 +523,6 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/main1.js"></script>
+    <!--<script src="js/main1.js"></script>-->
 </body>
 </html>

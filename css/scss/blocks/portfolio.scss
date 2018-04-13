@@ -21,7 +21,7 @@
 
   content: "";
   width: 100%;
-  height: 100%;
+  padding-top: 85.3242%;
 
   background-color: rgba(226, 69, 38, 0.75);
 
@@ -33,6 +33,8 @@
 }
 
 .portfolio__img{
+  display: block;
+
   max-width: 100%;
 }
 

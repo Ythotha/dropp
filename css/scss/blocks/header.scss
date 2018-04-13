@@ -1,12 +1,19 @@
 /*HEADER*/
 
 .header{
-  background-color: $white;
-  color: $header-grey;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 2;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: $white;
+  color: $header-grey;
 }
 
 .header__logo{
@@ -98,14 +105,31 @@
   display: none;
 
   list-style-type: none;
+
+  width: 40%;
+
+  z-index: 999;
+}
+
+.header__list_open{
+  position: fixed;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
 }
 
 .header__link{
-  padding: 0.5rem;
+  width: 100%;
+  padding: 1rem 0.5rem;
 
   font-family: "Oswald", sans-serif ;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
 
   transition: background-color .3s linear;
 }
@@ -119,11 +143,16 @@
 
 @media (min-width: 768px) {
   .header__link{
-    padding: 4.5rem 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
+  .header{
+    position: static;
+  }
+
   .hamburger{
     display: none;
   }
@@ -131,12 +160,13 @@
   .header__list{
     display: flex;
     flex-direction: row;
+    position: static;
   }
 
   .header__link {
-    font-size: 1.7rem;
+    width: auto;
+    /*font-size: 1.7rem;*/
 
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 4.5rem 2rem;
   }
 }

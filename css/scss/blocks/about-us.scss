@@ -8,7 +8,6 @@
 
 .about__member{
   box-sizing: border-box;
-  max-width: 48%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -20,8 +19,7 @@
 .about__member-info{
   background-color: $orange;
 
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+  padding: 4rem 2rem 3rem;
 }
 
 .about__columns{
@@ -97,23 +95,36 @@
 .about__member-skill-progress::-moz-progress-bar{
   background-color: $white;
 }
+/*123*/
+.about__input{
+  display: none;
+}
+
+.about__input:checked + label{
+  background-color: #eaeaea;
+}
+
+.about__member-info{
+  display: none;
+  order: 1;
+}
+
+.about__input:checked + label + .about__member-info{
+  display: block;
+}
 
 @media (min-width: 768px) {
-  .about__member{
-    max-width: 19%;
-  }
-
   .about__columns{
     display: flex;
   }
   .about__member-main-info{
-    width: 48%;
+    width: 45%;
   }
 
   .about__member-skills{
-    width: 48%;
+    width: 45%;
     margin-top: 0;
-    margin-left: 2%;
+    margin-left: 8%;
   }
 }
 
@@ -146,5 +157,9 @@
     border-left: 1.8rem solid transparent;
     border-right: 1.8rem solid transparent;
     border-top: 3.6rem solid $white;
+  }
+
+  .about__member-skill-progress{
+    width: 60%;
   }
 }
